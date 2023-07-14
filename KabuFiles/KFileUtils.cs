@@ -84,6 +84,4 @@ public static class KFileUtils
     }
 
     #endregion //Name checking
-
-
 }
