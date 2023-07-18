@@ -1,4 +1,4 @@
-﻿namespace SDKabu.KabuFiles;
+﻿namespace SDKabu.KUtils;
 
 public static class KFileUtils
 {

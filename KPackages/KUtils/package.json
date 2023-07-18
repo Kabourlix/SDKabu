@@ -1,0 +1,17 @@
+{
+    "name": "com.sdkabu.kutils",
+    "version": "1.0.0",
+    "displayName": "KUtils",
+    "description": "Utility methods for Unity",
+    "unity": "2021.3",
+    "keywords": [
+        "unity",
+        "utility",
+        "files"
+    ],
+    "author": {
+        "name": "Hugo 'Kabourlix' Da Maïa",
+        "email": "hdamaia@outlook.fr",
+        "url" : "www.hdamaia.fr"
+    }
+}
