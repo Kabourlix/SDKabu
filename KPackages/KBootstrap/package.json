@@ -1,0 +1,16 @@
+{
+    "name": "com.sdkabu.kbootstrap",
+    "version": "1.0.0",
+    "displayName": "KBootstrap",
+    "description": "Boostrap package to easier use of SDKabu",
+    "unity": "2021.3",
+    "keywords": [
+        "Bootstrap",
+        "unity"
+    ],
+    "author": {
+        "name": "Hugo 'Kabourlix' Da Maïa",
+        "email": "hdamaia@outlook.fr",
+        "url" : "www.hdamaia.fr"
+    }
+}
