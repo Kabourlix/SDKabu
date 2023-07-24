@@ -1,15 +1,16 @@
 {
-    "name": "com.sdkabu.kbootstrap",
+    "name": "com.sdkabu.kcharacter",
     "version": "1.0.0",
-    "displayName": "KBootstrap",
-    "description": "Boostrap package to easier use of SDKabu",
+    "displayName": "KCharacter",
+    "description": "Scripts related to characters",
     "unity": "2021.3",
     "dependencies": {
         "com.unity.inputsystem" : "1.6.3"
     },
     "keywords": [
-        "Bootstrap",
-        "unity"
+        "unity",
+        "Characer",
+        "Components"
     ],
     "author": {
         "name": "Hugo 'Kabourlix' Da Maïa",

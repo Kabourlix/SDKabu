@@ -1,0 +1,17 @@
+{
+    "name": "KCharacter",
+    "rootNamespace": "SDKabu.KCharacter",
+    "references": [
+        "KBootstrap",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

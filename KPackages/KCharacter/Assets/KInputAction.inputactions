@@ -1,0 +1,54 @@
+{
+    "name": "KInputAction",
+    "maps": [
+        {
+            "name": "Default",
+            "id": "b8bd0b8c-2dcf-4e2e-9148-689bf80288f0",
+            "actions": [
+                {
+                    "name": "MovePos",
+                    "type": "Value",
+                    "id": "f4974b75-3c7a-4ba1-9b6d-716cdcaad00c",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "dad7a7a1-9a2c-4e91-924a-c43193ed7e18",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c9e10893-9c0d-4f0c-8fe8-4bf314a3672d",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovePos",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1ffa9289-771f-413e-83bc-d0e0de325668",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
