@@ -1,0 +1,16 @@
+{
+    "name": "KUI",
+    "rootNamespace": "SDKabu.KUI",
+    "references": [
+        "KBootstrap"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

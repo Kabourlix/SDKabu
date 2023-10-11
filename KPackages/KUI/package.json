@@ -1,0 +1,18 @@
+{
+    "name": "com.sdkabu.kui",
+    "version": "1.0.0",
+    "displayName": "KUI",
+    "description": "Scripts related to characters",
+    "unity": "2021.3",
+    "dependencies": {
+    },
+    "keywords": [
+        "unity",
+        "UI"
+    ],
+    "author": {
+        "name": "Hugo 'Kabourlix' Da Maïa",
+        "email": "hdamaia@outlook.fr",
+        "url" : "www.hdamaia.fr"
+    }
+}
