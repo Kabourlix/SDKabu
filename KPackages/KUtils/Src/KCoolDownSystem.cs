@@ -1,5 +1,5 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by Kabourlix Cendrée on 07
+// Created by Kabourlix Cendrée on 12
 
 #nullable enable
 
@@ -12,9 +12,10 @@ namespace SDKabu.KUtils
     public class KCoolDownSystem : MonoBehaviour
     {
         //TODO : Improve the system with better architecture : Dependance injection
+
         #region Singleton
 
-        public static CoolDownSystem? Instance;
+        public static KCoolDownSystem? Instance;
 
         private void Awake()
         {
