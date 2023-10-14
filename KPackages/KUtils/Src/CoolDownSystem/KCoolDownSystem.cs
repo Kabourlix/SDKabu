@@ -32,6 +32,10 @@ namespace SDKabu.KUtils
         {
             foreach (KeyValuePair<string, KCoolDown> kv in registeredCoolDowns)
             {
+                if (!kv.Value.IsRunning)
+                {
+                    continue;
+                }
                 kv.Value.UpdateRemaining(Time.deltaTime);
                 if (kv.Value.IsRunning)
                 {

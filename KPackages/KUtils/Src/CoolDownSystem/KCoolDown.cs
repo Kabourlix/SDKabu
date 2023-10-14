@@ -7,19 +7,20 @@ using UnityEngine;
 
 namespace SDKabu.KUtils
 {
-    public struct KCoolDown
+    public class KCoolDown
     {
         public readonly string Id;
         public float Duration { get; private set; }
         public float RemainingTime { get; private set; }
-        public bool IsRunning { get; private set; }
+        public bool IsRunning => RemainingTime > 0 && !isPaused;
+        private bool isPaused;
 
         public KCoolDown(string _id, float _duration)
         {
             Id = _id;
             Duration = _duration;
             RemainingTime = 0;
-            IsRunning = false;
+            isPaused = false;
         }
 
         /// <summary>
@@ -35,7 +36,6 @@ namespace SDKabu.KUtils
             }
 
             RemainingTime = Duration;
-            IsRunning = true;
             return true;
         }
 
@@ -53,7 +53,6 @@ namespace SDKabu.KUtils
             }
 
             RemainingTime = 0;
-            IsRunning = false;
         }
 
         public void Pause(bool _pause)
@@ -61,17 +60,16 @@ namespace SDKabu.KUtils
             if (RemainingTime <= 0)
             {
                 Debug.LogWarning($"{Id} cannot be paused since it is not running.");
-                IsRunning = false;
+                isPaused = false;
                 return;
             }
 
-            IsRunning = !_pause;
+            isPaused = _pause;
         }
 
         public void Stop()
         {
             RemainingTime = 0;
-            IsRunning = false;
         }
 
         public bool UpdateDuration(float _newDuration, bool _override)
