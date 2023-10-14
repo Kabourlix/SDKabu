@@ -10,13 +10,6 @@ using UnityEngine;
 namespace SDKabu.KUtils
 {
     /// <summary>
-    /// Any of your service shall implement this interface.
-    /// </summary>
-    public interface IKService : IDisposable
-    {
-    }
-
-    /// <summary>
     /// Use this class to declare a service.
     /// </summary>
     public static class KServiceInjection
