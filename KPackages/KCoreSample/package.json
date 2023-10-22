@@ -1,14 +1,14 @@
 {
-    "name": "com.sdkabu.kui",
+    "name": "com.sdkabu.kcore.sample",
     "version": "1.0.0",
-    "displayName": "KUI",
-    "description": "Scripts related to characters",
+    "displayName": "KCoreSample",
+    "description": "Core samples to be used in games.",
     "unity": "2021.3",
     "dependencies": {
     },
     "keywords": [
         "unity",
-        "UI"
+        "sample"
     ],
     "author": {
         "name": "Hugo 'Kabourlix' Da Maïa",

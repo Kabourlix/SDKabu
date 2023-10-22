@@ -2,7 +2,7 @@
     "name": "KUI",
     "rootNamespace": "SDKabu.KUI",
     "references": [
-        "KBootstrap"
+        "KCore"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -1,5 +1,4 @@
-﻿// Copyrighted by team Rézoskour
-// Created by Kabourlix Cendrée on 14
+﻿// Created by Kabourlix Cendrée on 14/10/2023
 
 #nullable enable
 using UnityEngine;
@@ -8,18 +7,7 @@ namespace SDKabu.KUtils
 {
     public class KBasicServiceInjector : MonoBehaviour
     {
-        [SerializeField] private bool injectKCoolDownSystem = true;
-
         private void Awake()
-        {
-            //Instantiate KCoolDownSystem
-            if (injectKCoolDownSystem)
-            {
-                InjectKCoolDownSystem();
-            }
-        }
-
-        private void InjectKCoolDownSystem()
         {
             GameObject cdGameObject = new(nameof(KCoolDownSystem));
             cdGameObject.transform.SetParent(transform);
