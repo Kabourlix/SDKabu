@@ -1,5 +1,4 @@
-﻿// Copyrighted by team Rézoskour
-// Created by Kabourlix Cendrée on 12
+﻿// Created by Kabourlix Cendrée on 12/10/2023
 
 #nullable enable
 
@@ -7,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SDKabu.KUtils
+namespace SDKabu.KCore
 {
     /// <summary>
     /// Use this class to declare a service.

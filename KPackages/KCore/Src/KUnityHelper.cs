@@ -1,5 +1,4 @@
-﻿// Copyrighted by team Rézoskour
-// Created by Kabourlix Cendrée on 07
+﻿// Created by Kabourlix Cendrée on 12/10/2023
 
 #nullable enable
 
@@ -8,7 +7,7 @@ using UnityEngine;
 // Copyrighted by team Rézoskour
 // Created by Kabourlix Cendrée on 07
 
-namespace SDKabu.KUtils
+namespace SDKabu.KCore
 {
     public static class KUnityHelper
     {

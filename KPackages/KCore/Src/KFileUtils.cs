@@ -1,7 +1,9 @@
-﻿using System;
+﻿// Created by Kabourlix Cendrée on 14/07/2023
+
+using System;
 using System.IO;
 
-namespace SDKabu.KUtils
+namespace SDKabu.KCore
 {
     public static class KFileUtils
     {
@@ -19,15 +21,15 @@ namespace SDKabu.KUtils
             if (_reformat)
             {
                 _name.ReformatFileName();
-            } 
-            
-            var path = Path.Combine(_location, _name);
+            }
+
+            string path = Path.Combine(_location, _name);
             if (File.Exists(path))
             {
                 Console.WriteLine($"File {_name} already exists in {_location}");
                 return false;
             }
-            
+
             File.Create(path);
             return true;
         }
@@ -45,14 +47,14 @@ namespace SDKabu.KUtils
             {
                 _name.ReformatDirectoryName();
             }
-            
-            var path = Path.Combine(_location, _name);
+
+            string path = Path.Combine(_location, _name);
             if (Directory.Exists(path))
             {
                 Console.WriteLine($"Directory {_name} already exists in {_location}");
                 return false;
             }
-            
+
             Directory.CreateDirectory(path);
             return true;
         }
@@ -63,13 +65,15 @@ namespace SDKabu.KUtils
 
         private static bool IsFileNameCorrect(string _name)
         {
-            var split = _name.Split('.');
-            
-            if (split.Length == 2) return true;
-            
+            string[] split = _name.Split('.');
+
+            if (split.Length == 2)
+            {
+                return true;
+            }
+
             Console.WriteLine($"File {_name} is not a valid file name.");
             return false;
-
         }
 
         private static void ReformatFileName(this string _name)
@@ -78,6 +82,7 @@ namespace SDKabu.KUtils
             {
                 throw new Exception($"File {_name} is not a valid file name.");
             }
+
             _name = _name.Trim().Replace(" ", "_");
         }
 

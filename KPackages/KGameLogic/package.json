@@ -1,0 +1,17 @@
+{
+    "name": "com.sdkabu.kgamelogic",
+    "version": "1.0.0",
+    "displayName": "KGameLogic",
+    "description": "Basic class for game logic",
+    "unity": "2021.3",
+    "dependencies": {
+    },
+    "keywords": [
+        "unity"
+    ],
+    "author": {
+        "name": "Hugo 'Kabourlix' Da Maïa",
+        "email": "hdamaia@outlook.fr",
+        "url" : "www.hdamaia.fr"
+    }
+}

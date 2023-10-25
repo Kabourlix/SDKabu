@@ -3,7 +3,7 @@
 #nullable enable
 using UnityEngine;
 
-namespace SDKabu.KUtils
+namespace SDKabu.KCore
 {
     public class KBasicServiceInjector : MonoBehaviour
     {

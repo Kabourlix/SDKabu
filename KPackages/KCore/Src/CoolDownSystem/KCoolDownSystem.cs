@@ -1,5 +1,4 @@
-﻿// Copyrighted by team Rézoskour
-// Created by Kabourlix Cendrée on 12
+﻿// Created by Kabourlix Cendrée on 12/10/2023
 
 #nullable enable
 
@@ -8,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace SDKabu.KUtils
+namespace SDKabu.KCore
 {
     internal class KCoolDownSystem : MonoBehaviour, IKCoolDown
     {
@@ -36,6 +35,7 @@ namespace SDKabu.KUtils
                 {
                     continue;
                 }
+
                 kv.Value.UpdateRemaining(Time.deltaTime);
                 if (kv.Value.IsRunning)
                 {

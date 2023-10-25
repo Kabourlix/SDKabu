@@ -1,6 +1,6 @@
 {
-    "name": "KUI",
-    "rootNamespace": "SDKabu.KUI",
+    "name": "KGameLogic",
+    "rootNamespace": "SDKabu.KGameLogic",
     "references": [
         "KCore"
     ],

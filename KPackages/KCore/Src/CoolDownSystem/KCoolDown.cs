@@ -1,11 +1,10 @@
-﻿// Copyrighted by team Rézoskour
-// Created by Kabourlix Cendrée on 14
+﻿// Created by Kabourlix Cendrée on 14/10/2023
 
 #nullable enable
 using System.Linq;
 using UnityEngine;
 
-namespace SDKabu.KUtils
+namespace SDKabu.KCore
 {
     public class KCoolDown
     {

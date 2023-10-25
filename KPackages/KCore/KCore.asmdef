@@ -1,6 +1,6 @@
 {
-    "name": "KUtils",
-    "rootNamespace": "SDKabu.KUtils",
+    "name": "KCore",
+    "rootNamespace": "SDKabu.KCore",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
