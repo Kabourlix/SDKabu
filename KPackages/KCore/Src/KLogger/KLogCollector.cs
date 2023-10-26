@@ -49,7 +49,7 @@ namespace SDKabu.KCore
 
 #if UNITY_EDITOR
         //Menu item that will open the persistent data path in the file explorer with f1 key
-        [MenuItem("SDKabu/Open Persistent Data Path %f1", false)]
+        [MenuItem("SDKabu/Open Persistent Data Path _F1", false)]
 #endif
         public static void OpenPersistentDataPath()
         {
