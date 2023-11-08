@@ -1,6 +1,8 @@
-﻿// Created by Kabourlix Cendrée on 14/10/2023
+﻿// Copyright (c) Asobo Studio, All rights reserved. www.asobostudio.com
+
 
 #nullable enable
+using System;
 using UnityEngine;
 
 namespace SDKabu.KCore
@@ -13,6 +15,11 @@ namespace SDKabu.KCore
             cdGameObject.transform.SetParent(transform);
             KCoolDownSystem cdSystem = cdGameObject.AddComponent<KCoolDownSystem>();
             KServiceInjection.Add<IKCoolDown>(cdSystem);
+        }
+
+        private void OnDestroy()
+        {
+            KServiceInjection.Remove<IKCoolDown>();
         }
     }
 }
