@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace SDKabu.KCore
 {
-    public class KBasicServiceInjector : MonoBehaviour
+    public class KCoolDownInjector : MonoBehaviour
     {
         private void Awake()
         {

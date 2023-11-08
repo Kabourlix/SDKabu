@@ -1,4 +1,5 @@
-﻿// Created by Kabourlix Cendrée on 22
+﻿// Copyright (c) Asobo Studio, All rights reserved. www.asobostudio.com
+
 
 #nullable enable
 using System;
@@ -31,7 +32,7 @@ namespace SDKabu.KCharacter
         public THealthType MaxHealth { get; }
         public float HealthPercentage { get; }
 
-        public void Damage(THealthType _brutAmount, Func<THealthType, THealthType>? _amountModifierFunc = null);
+        public void TakeDamage(THealthType _brutAmount, Func<THealthType, THealthType>? _amountModifierFunc = null);
         public void Heal(THealthType _brutAmount, Func<THealthType, THealthType>? _amountModifierFunc = null);
     }
 
