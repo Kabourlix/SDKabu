@@ -6,17 +6,17 @@ using System;
 
 namespace SDKabu.KCharacter
 {
-    public interface IKHealth<THealthType>
+    public interface IKHealth<THealthType> //TODO : Modify it to make a class
     {
         /// <summary>
         /// Event fired when an actor dies, the parameter is the actor identifier.
         /// </summary>
-        public event Action<string>? OnActorDie;
+        public event Action<IKActor>? OnActorDie;
 
         /// <summary>
         /// Event fired when an actor takes damage, the parameter is the actor identifier.
         /// </summary>
-        public event Action<string>? OnIncomingDamage;
+        public event Action<IKActor>? OnIncomingDamage;
 
         /// <summary>
         /// Fired when health changed (heal or damage), the parameter is the new health.
