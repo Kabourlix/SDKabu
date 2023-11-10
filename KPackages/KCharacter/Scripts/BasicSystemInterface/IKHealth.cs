@@ -13,22 +13,22 @@ namespace SDKabu.KCharacter
         /// <summary>
         /// Event fired when an actor dies, the parameter is the actor identifier.
         /// </summary>
-        public static event Action<IKActor>? OnActorDie;
+        public event Action<IKActor>? OnActorDie;
 
         /// <summary>
         /// Event fired when an actor takes damage, the parameter is the actor identifier.
         /// </summary>
-        public static event Action<IKActor>? OnIncomingDamage;
+        public event Action<IKActor>? OnIncomingDamage;
 
         /// <summary>
         /// Fired when health changed (heal or damage), the parameter is the new health.
         /// </summary>
-        public static event Action<IKActor, int>? OnHealthChanged;
+        public event Action<IKActor, int>? OnHealthChanged;
 
         /// <summary>
         /// Fired when max health changed, the parameter is the new max health.
         /// </summary>
-        public static event Action<IKActor, int>? OnMaxHealthChanged;
+        public event Action<IKActor, int>? OnMaxHealthChanged;
 
         #endregion
 
