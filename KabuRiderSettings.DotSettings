@@ -239,6 +239,8 @@
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1741E519D838BC4284D62322ADBDBB19/Field/=HEADER/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1741E519D838BC4284D62322ADBDBB19/Field/=HEADER/Expression/@EntryValue">fileheader()</s:String>
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1741E519D838BC4284D62322ADBDBB19/Field/=HEADER/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1741E519D838BC4284D62322ADBDBB19/Field/=IMPLEMENTATION/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1741E519D838BC4284D62322ADBDBB19/Field/=IMPLEMENTATION/Order/@EntryValue">4</s:Int64>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1741E519D838BC4284D62322ADBDBB19/Field/=NAMESPACE/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1741E519D838BC4284D62322ADBDBB19/Field/=NAMESPACE/Expression/@EntryValue">fileDefaultNamespace()</s:String>
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1741E519D838BC4284D62322ADBDBB19/Field/=NAMESPACE/InitialRange/@EntryValue">-1</s:Int64>
@@ -264,13 +266,13 @@ namespace $NAMESPACE$
   {
     private void Awake()
     {
-        $SERVICE$ service = ;
-        KServiceInjector.Get&lt;$SERVICE$&gt;(service);
+        $IMPLEMENTATION$ service = new();
+        KServiceInjection.Get&lt;$SERVICE$&gt;(service);
     }
     
     private void OnDestroy()
     {
-        KServiceInjector.Remove&lt;$SERVICE$&gt;();
+        KServiceInjection.Remove&lt;$SERVICE$&gt;();
     }
   $END$
   
