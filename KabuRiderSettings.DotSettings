@@ -267,7 +267,7 @@ namespace $NAMESPACE$
     private void Awake()
     {
         $IMPLEMENTATION$ service = new();
-        KServiceInjection.Get&lt;$SERVICE$&gt;(service);
+        KServiceInjection.Add&lt;$SERVICE$&gt;(service);
     }
     
     private void OnDestroy()
