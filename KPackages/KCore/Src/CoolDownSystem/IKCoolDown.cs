@@ -1,4 +1,4 @@
-﻿// Created by Kabourlix Cendrée on 14/10/2023
+﻿// Created by Kabourlix Cendrée on 29/10/2023
 
 #nullable enable
 using System;
@@ -17,6 +17,9 @@ namespace SDKabu.KCore
         public bool TryGetCoolDownRemainingTime(KCoolDown _cd, out float _remainingTime);
         public bool IsCoolDownRegistered(string _id);
         public bool IsCoolDownRegistered(KCoolDown _cd);
+
+        public bool IsCoolDownFinished(string _id);
+        public bool IsCoolDownFinished(KCoolDown _cd);
 
         public bool TryRegisterCoolDown(string _id, float _duration);
         public bool TryRegisterCoolDown(KCoolDown _cd);

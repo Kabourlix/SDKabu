@@ -1,4 +1,4 @@
-﻿// Created by Kabourlix Cendrée on 12/10/2023
+﻿// Created by Kabourlix Cendrée on 29/10/2023
 
 #nullable enable
 
@@ -79,6 +79,22 @@ namespace SDKabu.KCore
         public bool IsCoolDownRegistered(KCoolDown _cd)
         {
             return IsCoolDownRegistered(_cd.Id);
+        }
+
+        public bool IsCoolDownFinished(string _id)
+        {
+            if (!IsCoolDownRegistered(_id))
+            {
+                Debug.LogError($"{_id} is not registered as a CoolDown");
+                return false;
+            }
+
+            return !registeredCoolDowns[_id].IsRunning;
+        }
+
+        public bool IsCoolDownFinished(KCoolDown _cd)
+        {
+            return IsCoolDownFinished(_cd.Id);
         }
 
         public bool TryRegisterCoolDown(string _id, float _duration)
